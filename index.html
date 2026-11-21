@@ -1,163 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Blog Card</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
-    <title>Simple FAQ | devChallenges.io</title>
-
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-     
-    <h1 style="white-space: nowrap;">Frequently Asked Questions</h1>
-  
-    <p style="white-space: nowrap;">Browse through the most frequently asked questions</p>
-   <br>
-    <h2>How can I track my order?</h2>
-  
-    <ol style="white-space: nowrap;">You can track your order by following these steps:</ol>
-  
-    
-      <li>1. Go to the Order <a href="#">Tracking page</a>.</li>
-  
-    <li>2. Enter your order number and email address.</li>
-  
-    <li style="white-space: nowrap;">3. Click on the Track Order button to view the current status of your shipment.</li>
-  
-    <p style="white-space: nowrap;" class="">If you encounter any issues, please visit our <a href="#">Help Center</a>.</p>
-  
-    <div class="line"></div>
-
-    <h2>What is your return policy?</h2>
-  
-    <ol style="white-space: nowrap;">We offer a 30-day return policy on most items. Here are some key points:</ol>
-    
-   <br>
-    <li style="white-space: nowrap;"><b>Items must be in original condition:</b>Unworn, unused, and unwashed.</li>
-  
-    <li style="white-space: nowrap;"><b>Include original packaging and tags:</b> All items should be returned with their original packaging and tags.</li>
-  
-    <li style="white-space: nowrap;"><b>Proof of purchase:</b>A receipt or proof of purchase is required.</li>
-  
-    <p style="white-space: nowrap;">For more detailed information, read our full Return Policy.</p>
-  
-
-    <div class="author-info">
-      Coded by <a href="#">Arya</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
-    <style>
-        h1 {
-            font-family: Inter;
-            font-size: 30px;
-            font-weight: 600;
-            text-align: center;
-            margin-top: 10%;
-            padding-left: 100px;
-        }
-
-        li{
-            font-family: Inter;
-            font-size: 13px;
-            font-weight: 400;
-            text-align: left;
-            margin-left: 25%;
-                     ;
-        }
-
-        p{
-            font-family: Inter;
-            font-size: 13px;
-            font-weight: 400;
-            margin-top: 5%;
-            margin-left: 25%;
-            padding-left: 8%;
-            text-align: left;
-        }
-        
-        h2{
-            font-family: Inter;
-            font-size: 24px;
-            font-weight: 600;
-            margin-top: 10%;
-            margin-left: 22%;
-            text-align: left;
-            padding-bottom: 20px;
-        }
-
-        ol{
-            font-family: Inter;
-            font-size: 16px;
-            margin-left: 150px;
-            
-        }
-
-        ul{
-            font-family: Inter;
-            font-size: 16px;
-            margin-left: 100px;
-        }
-
-        li{
-            padding: 5px;
-            line-height: 25px;
+        body{
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Horizontal center */
+            align-items: center;     /* Vertical center */
         }
 
         .container {
-            background-color: #F8FAFC; /* Applying a color keyword */
+            background-color: #FFFFFF; /* Example background color */
+            width: 350px; /* Example width */
+            height: 365px; /* Example height */
+            border-radius: 15px; /* This creates the rounded corners */
+            padding: 20px; /* Example padding */
+            /* text-align: center; */
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .centered-hr {
-            width: 50%; /* Adjust width as needed */
+        img{
+            border-radius: 15px;
+            display: block;
             margin: 0 auto;
-            background-color: #D2D5DA;
+        }
+
+        h1{
+            font-family: "Sora", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: left;
+            margin-left: 7px;
+        }
+
+        p{
+            font-family: "Sora", sans-serif;
+            color: #394150;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+            margin-left: 7px;
+            max-width: 330px;
+            line-height: 1.5;
+        }
+
+        .small-text{
+            font-family: "Sora", sans-serif;
+            color: #394150;
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            margin-left: 7px;
         }
 
         .line {
-            width: 90%;
+            width: calc(100% + 20px); /* 40px = left + right padding of .container */
             height: 1px;
-            background-color: #D2D5DA;
-            margin-left: 100px;
+            background-color: #E5EAF0;
+            margin: 0 -20px; /* push it into the padding */
+            margin: 25px 0;
         }
-
-        a{
-            color: #4E80EE;
-            text-decoration: none;
+        
+        button{
+            background-color: #F2EAFD;
+            font-family: "Sora", sans-serif;
+            color: #7C19EE;
+            font-size: 10px;
+            font-weight: 600;
+            border-radius: 15px;
+            border: none;         /* removes default border */
+            box-shadow: none;     /* ensures no shadow */
+            padding: 6px 14px;    /* adjust size */
+            display: inline-block; 
+            margin-left: 7px;     /* optional, to align with text margin */
         }
-        div.line {
-            margin-top: 30px;
-            color: rgb(55, 65, 81);
-        }
-        p.
+        
     </style>
-  </body>
+</head>
+<body>
+    <div class="container">
+        <img src="/resources/Cactus.jpg" alt="cactus">
+        <h1>Embracing Minimalism</h1>
+        <button>Design</button>
+        <p>From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.</p>
+        <div class="line"></div>
+        <p class="small-text">Annie Spratt</p>
+    </div>
+    
+    
+</body>
 </html>
